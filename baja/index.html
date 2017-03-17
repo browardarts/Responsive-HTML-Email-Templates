@@ -316,12 +316,12 @@
 	@tip Set the background color and borders for your email's column area.
 	*/
 		#templateColumns{
-			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-color:#E8F9FF;
 			/*@editable*/border-top:0px solid #FFFFFF;
 			/*@editable*/border-bottom:0px solid #CCCCCC;
 		}
 		#template3Columns{
-			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-color:#ffffff;
 			/*@editable*/border-top:0px solid #FFFFFF;
 			/*@editable*/border-bottom:0px solid #CCCCCC;
 		}
@@ -614,14 +614,14 @@
 	@tip Set the background color and borders for your email's column area.
 	*/
 		#templateColumns{
-			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-color:#E8F9FF;
 			/*@editable*/border-top:1px solid #FFFFFF;
 			/*@editable*/border-bottom:1px solid #FFFFFF;
 		}
 
 }	@media only screen and (max-width: 480px){
 		#template3Columns{
-			/*@editable*/background-color:#fafafa;
+			/*@editable*/background-color:#E8F9FF;
 			/*@editable*/border-top:1px solid #FFFFFF;
 			/*@editable*/border-bottom:1px solid #FFFFFF;
 		}
@@ -824,9 +824,10 @@
                 	<td align="center" valign="top" id="bodyCell">
                     	<!-- BEGIN TEMPLATE // -->
                     	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
-                        	<tr>
+                        	<!-- BEGIN PREHEADER // -->
+                           <tr>
                             	<td align="center" valign="top">
-                                	<!-- BEGIN PREHEADER // -->
+                                	
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
                                             <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
@@ -839,12 +840,13 @@
                                             <!-- *|END:IF|* -->
                                         </tr>
                                     </table>
-                                    <!-- // END PREHEADER -->
+                                    
                                 </td>
-                            </tr>
-                        	<tr>
+                            </tr><!-- // END PREHEADER -->
+                        	<!-- BEGIN HEADER // -->
+                           <tr>
                             	<td align="center" valign="top">
-                                	<!-- BEGIN HEADER // -->
+                                	
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
@@ -852,13 +854,13 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END HEADER -->
                                 </td>
-                            </tr>
-                                    <!-- BEGIN SECTION 1 -->
-                        	<tr>
+                            </tr><!-- // END HEADER -->
+
+                        	<!-- BEGIN SINGLE COLUMN BLOCK -->
+                               <tr>
                             	<td align="center" valign="top">
-                                	<!-- BEGIN BODY // -->
+                                	
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
 
                                     	<tr>
@@ -953,552 +955,82 @@
                                 </td>
                             </tr>-->
                                     <!-- // END SECTION 1 -->
-                            <tr>
-                                <td height="1" bgcolor="#ffffff" style="border:none; font-size:1px; line-height:1px; padding-top:20px; margin-bottom: 20px;">&nbsp;
-                                </td>
-                            </tr>
-                                     <!-- BEGIN SECTION 2 -->
-                        	<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN BODY // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-                                        <tr mc:repeatable>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content02">
-                                                <h1>Cooperative Marketing Program</h1>
-                                            </td>
-                                        </tr>
-                                    	<tr>
-                                        	<td class="bodyContent" style="padding-top:0; padding-bottom:0;">
-                                            	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/body_placeholder_650px.png" style="max-width:560px;" id="bodyImage" mc:label="body_image_2" mc:edit="body_image_2" mc:allowtext="">
-                                            </td>
-                                        </tr>
-                                        <!--
-                                        <tr>
-                                            <!--<td valign="top" class="captionContent" mc:edit="image_caption02">
-                                                <h4>Put that great image caption right here.</h4> 
-                                            </td>
-                                        </tr>-->
-
-                                    </table>
-                                    <!-- // END BODY -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" class="bodyContent" mc:edit="body_content03">
-                                    <h2>Header 2</h2>
-                                    Text here...
-                                </td>
-                            </tr>
-                            <!--<tr>
-                                <td class="bodyContent" style="padding-top:0; padding-bottom:0;">
-                                    <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/body_placeholder_650px.png" style="max-width:560px;" id="bodyImage" mc:label="body_image_2b" mc:edit="body_image_2b" mc:allowtext="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" class="bodyContent" mc:edit="body_content03b">
-                                    <h2>Header 2</h2>
-                                    Text here...
-                                </td>
-                            </tr>-->
-                            <!-- BEGIN 2 COLUMN BLOCK -->
-                             <tr mc:repeatable>
-                                <td valign="top" class="bodyContent" mc:edit="body_content04">
-                                    <h1>Upcoming Events</h1>
-                                </td>
-                             </tr>
-                        	<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN COLUMNS // -->
-                                    <table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateColumns">
-                                    	<tr mc:repeatable>
-                                        	<td align="left" valign="top">
-                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                                 <!--	<tr>
-                                                    	<td class="leftColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-                                                        </td>
-                                                    </tr> -->
-                                                    <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                    <!-- Button -->
-                                                    <tr>
-                                                        <td id="bodyCell" mc:edit="left_column_button">
-                                                            <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
-                                                                        <a href="..." target="_blank" style="color:#FFFFFF; font-family:'karla', Helvetica, sans-serif; font-size:16px; font-weight:normal; text-decoration:none;">Read More</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                           </td>
-                                                       </tr>
-                                                    
-                                                </table>
-                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                                <!--	<tr>
-                                                    	<td class="rightColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
-                                                        </td>
-                                                    </tr> -->
-                                                    <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                    <!-- Button -->
-                                                    <tr>
-                                                        <td id="bodyCell" mc:edit="right_column_button">
-                                                            <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
-                                                                        <a href="..." target="_blank" style="color:#FFFFFF; font-family:'karla', Helvetica, sans-serif; font-size:16px; font-weight:normal; text-decoration:none;">RSVP</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                           </td>
-                                                       </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END COLUMNS -->
-                                </td>
-                            </tr>
-                             <tr mc:repeatable>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content05">
-                                                <h1>Opportunities</h1>
-                                            </td>
-                                        </tr>
-                                    <!-- // END SECTION 2 --> 
-                                    
-
-                        	<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN COLUMNS // -->
-                                    <table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateColumns">
-                                    	<tr mc:repeatable>
-                                        	<td align="left" valign="top">
-                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                                 <!--	<tr>
-                                                    	<td class="leftColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-                                                        </td>
-                                                    </tr> -->
-                                                    <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                    <!-- Button -->
-                                                    <tr>
-                                                        <td id="bodyCell" mc:edit="left_column_button">
-                                                            <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
-                                                                        <a href="..." target="_blank" style="color:#FFFFFF; font-family:'karla', Helvetica, sans-serif; font-size:16px; font-weight:normal; text-decoration:none;">Read More</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                           </td>
-                                                       </tr>
-                                                    
-                                                </table>
-                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                                <!--	<tr>
-                                                    	<td class="rightColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
-                                                        </td>
-                                                    </tr> -->
-                                                    <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                    <!-- Button -->
-                                                    <tr>
-                                                        <td id="bodyCell" mc:edit="right_column_button">
-                                                            <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
-                                                                        <a href="..." target="_blank" style="color:#FFFFFF; font-family:'karla', Helvetica, sans-serif; font-size:16px; font-weight:normal; text-decoration:none;">RSVP</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                           </td>
-                                                       </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END COLUMNS -->
-                                </td>
-                            </tr>
-                                    <!-- // END SECTION 2 --> 
-                                    
-                            <tr>
-                                <td height="1" bgcolor="#ffffff" style="border:none; font-size:1px; line-height:1px; padding-top:20px; margin-bottom: 20px;">&nbsp;
-                                </td>
-                            </tr>
-                             <tr mc:repeatable>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content06">
-                                                <h1>BAJA</h1>
-                                            </td>
-                                        </tr>
-                            <tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN 3 COLUMN LAYOUT // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="template3Columns">
-                                    	<tr mc:repeatable>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="left3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="left_3_column_image" mc:edit="left_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="left3ColumnContent" mc:edit="left_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="center3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="center_3_column_image" mc:edit="center_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="center3ColumnContent" mc:edit="center_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="right3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="right_3_column_image" mc:edit="right_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="right3ColumnContent" mc:edit="right_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END 3 COLUMNS --> 
-                                </td>
-                            </tr>
-                                    <!-- BEGIN SECTION 3 -->
-                        	<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN BODY // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-                                        <tr mc:repeatable>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content07">
-                                                <h1>Public Art & Design</h1>
-                                            </td>
-                                        </tr>
-                                    	<tr>
-                                        	<td class="bodyContent" style="padding-top:0; padding-bottom:0;">
-                                            	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/body_placeholder_650px.png" style="max-width:560px;" id="bodyImage" mc:label="body_image_3" mc:edit="body_image_3" mc:allowtext="">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                           <!--
-                                            <td valign="top" class="captionContent" mc:edit="image_caption03">
-                                                <h4>Put that great image caption right here.</h4> 
-                                            </td> -->
-                                        </tr>
-                                        <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content08">
-                                                <h2>Styling Your Content</h2>
-                                                <h4>Make your email easy to read</h4>
-                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style. 
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END BODY -->
-                                </td>
-                            </tr>
-                             <tr mc:repeatable>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content09">
-                                                <h1>Arts Calendar</h1>
-                                            </td>
-                                        </tr>
-                            <tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN 3 COLUMN LAYOUT // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="template3Columns">
-                                    	<tr mc:repeatable>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="left3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="left_3_column_image" mc:edit="left_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="left3ColumnContent" mc:edit="left_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="center3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="center_3_column_image" mc:edit="center_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="center3ColumnContent" mc:edit="center_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="right3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="right_3_column_image" mc:edit="right_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="right3ColumnContent" mc:edit="right_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END 3 COLUMNS --> 
-                                </td>
-                            </tr>
-                             <tr mc:repeatable>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content10">
-                                                <h1>Blogs</h1>
-                                            </td>
-                                        </tr>
-                        	<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN COLUMNS // -->
-                                    <table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateColumns">
-                                    	<tr mc:repeatable>
-                                        	<td align="left" valign="top">
-                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                                 <!--	<tr>
-                                                    	<td class="leftColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-                                                        </td>
-                                                    </tr> -->
-                                                    <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                    <!-- Button -->
-                                                    <tr>
-                                                        <td id="bodyCell" mc:edit="left_column_button">
-                                                            <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
-                                                                        <a href="..." target="_blank" style="color:#FFFFFF; font-family:'karla', Helvetica, sans-serif; font-size:16px; font-weight:normal; text-decoration:none;">Read More</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                           </td>
-                                                       </tr>
-                                                    
-                                                </table>
-                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                                <!--	<tr>
-                                                    	<td class="rightColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
-                                                        </td>
-                                                    </tr> -->
-                                                    <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                    <!-- Button -->
-                                                    <tr>
-                                                        <td id="bodyCell" mc:edit="right_column_button">
-                                                            <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
-                                                                        <a href="..." target="_blank" style="color:#FFFFFF; font-family:'karla', Helvetica, sans-serif; font-size:16px; font-weight:normal; text-decoration:none;">RSVP</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                           </td>
-                                                       </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END COLUMNS -->
-                                </td>
-                            </tr>
-                                    <!-- // END SECTION 3 -->  
-                            <tr> 
-                                <td height="1" bgcolor="#ffffff" style="border:none; font-size:1px; line-height:1px; padding-top:20px; margin-bottom: 20px;">&nbsp;
-                                </td>
-                            </tr>                                                                    
-                                    <!-- BEGIN SECTION 4 -->
-                        	<!--<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN BODY // --> <!--
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-                                        <tr mc:repeatable>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content08">
-                                                <h1>Events</h1>
-                                                <h3>Creating a good-looking email is simple</h3>
-                                                Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END BODY --> <!--
-                                </td>
-                            </tr> -->
-
-                        	<!--<tr>
-                            	<td align="center" valign="top">
-                                	<!-- BEGIN 3 COLUMN LAYOUT // --> <!--
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="template3Columns">
-                                    	<tr mc:repeatable>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="left3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="left_3_column_image" mc:edit="left_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="left3ColumnContent" mc:edit="left_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="center3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="center_3_column_image" mc:edit="center_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="center3ColumnContent" mc:edit="center_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        	<td align="center" valign="top" class="template3ColumnContainer">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="right3ColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="right_3_column_image" mc:edit="right_3_column_image">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="right3ColumnContent" mc:edit="right_3_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br>
-                                                            <br>
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // END 3 COLUMNS --> <!--
-                                </td>
-                            </tr>-->
-                            <!--<tr>
-                                <td id="bodyCell" mc:edit="right_column_button">
-                                    <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
-                                        <tr>
-                                            <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
+                                <tr>
+                                    <td id="bodyCell" mc:edit="right_column_button">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="emailButton" style="border-radius:3px; background-color:#ff6863;" width="100%">
+                                            <tr>
+                                                <td align="center" valign="middle" class="emailButtonContent" style="padding-top:15px; padding-right:30px; padding-bottom:15px; padding-left:30px;">
                                                 <a href="..." target="_blank" style="color:#FFFFFF; font-family:'karla', Helvetica, sans-serif; font-size:16px; font-weight:normal; text-decoration:none;">RSVP</a>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
                                    </td>
                                </tr>
+                                   
+                               <tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN 3 COLUMN LAYOUT // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="template3Columns">
+                                    	<tr mc:repeatable>
+                                        	<td align="center" valign="top" class="template3ColumnContainer">
+                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="left3ColumnContent">
+                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="left_3_column_image" mc:edit="left_3_column_image">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="left3ColumnContent" mc:edit="left_3_column_content">
+                                                            <h3>Repeatable Content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                            <br>
+                                                            <br>
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="template3ColumnContainer">
+                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="center3ColumnContent">
+                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="center_3_column_image" mc:edit="center_3_column_image">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="center3ColumnContent" mc:edit="center_3_column_content">
+                                                            <h3>Repeatable Content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                            <br>
+                                                            <br>
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="template3ColumnContainer">
+                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="right3ColumnContent">
+                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="column3Image" mc:label="right_3_column_image" mc:edit="right_3_column_image">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="right3ColumnContent" mc:edit="right_3_column_content">
+                                                            <h3>Repeatable Content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                            <br>
+                                                            <br>
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END 3 COLUMNS --> 
+                                </td>
+                            </tr>
                                     <!-- // END SECTION 5 -->
                         	<tr>
                             	<td align="center" valign="top">
